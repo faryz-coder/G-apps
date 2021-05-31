@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "129532757392",
+    "project_id": "guitarapps-c52f7",
+    "storage_bucket": "guitarapps-c52f7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:129532757392:android:5258a88d72f74145dfdf15",
+        "android_client_info": {
+          "package_name": "com.deventhirran.guitarapps"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "129532757392-b39npojtu74prg10nva0o1s3t0e98393.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDuTrp3J7v-moVq2egve37ycrD8puMTiME"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "129532757392-b39npojtu74prg10nva0o1s3t0e98393.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
