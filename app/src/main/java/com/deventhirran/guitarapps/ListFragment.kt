@@ -12,10 +12,6 @@ import com.google.firebase.ktx.Firebase
 
 class ListFragment : Fragment() {
     val db = Firebase.firestore
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-
-    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

@@ -30,15 +30,16 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        // INTRO
         view.findViewById<CardView>(R.id.card_intro).setOnClickListener {
             findNavController().navigate(R.id.action_HomeFragment_to_SecondFragment)
         }
-
+        //LESSON
         view.findViewById<CardView>(R.id.card_lesson).setOnClickListener {
             val bundle = bundleOf("type" to "lesson")
             it.findNavController().navigate(R.id.action_HomeFragment_to_ListFragment, bundle)
         }
-
+        //GUITAR VIEW
         view.findViewById<CardView>(R.id.card_guitarView).setOnClickListener { v ->
             db.collection("guitar").document("view")
                 .get()
@@ -47,6 +48,15 @@ class HomeFragment : Fragment() {
                     val bundle = bundleOf("link" to link)
                     v.findNavController().navigate(R.id.action_HomeFragment_to_SecondFragment, bundle)
                 }
+        }
+        // CHORD TRAINING
+        view.findViewById<CardView>(R.id.card_chord).setOnClickListener {
+            val bundle = bundleOf("type" to "chord")
+            it.findNavController().navigate(R.id.action_HomeFragment_to_ListFragment, bundle)
+        }
+        // TUTORIAL
+        view.findViewById<CardView>(R.id.card_tutorial).setOnClickListener {
+            it.findNavController().navigate(R.id.action_HomeFragment_to_LessonFragment)
         }
 
 

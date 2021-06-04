@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:layout_marginBottom="7dp"
     android:background="@drawable/card_background"
     android:backgroundTint="#A5A5A5"
     android:orientation="vertical"

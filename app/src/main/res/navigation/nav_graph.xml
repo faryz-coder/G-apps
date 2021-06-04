@@ -16,6 +16,9 @@
         <action
             android:id="@+id/action_HomeFragment_to_ListFragment"
             app:destination="@id/ListFragment" />
+        <action
+            android:id="@+id/action_HomeFragment_to_LessonFragment"
+            app:destination="@id/LessonFragment" />
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
@@ -40,4 +43,9 @@
             android:id="@+id/action_ListFragment_to_SecondFragment"
             app:destination="@id/SecondFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/LessonFragment"
+        android:name="com.deventhirran.guitarapps.LessonFragment"
+        android:label="fragment_lesson"
+        tools:layout="@layout/fragment_lesson" />
 </navigation>
