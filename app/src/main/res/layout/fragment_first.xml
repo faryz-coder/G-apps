@@ -37,11 +37,18 @@
                     android:id="@+id/card_intro"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_margin="12dp"
-                    app:cardCornerRadius="12dp"
+                    android:layout_margin="2dp"
+                    app:cardCornerRadius="5dp"
                     app:cardElevation="6dp"
                     app:layout_columnWeight="1"
                     app:layout_rowWeight="1">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/intro">
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -53,12 +60,16 @@
                         <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/ic_launcher_foreground" />
+                            android:src="@drawable/ic_launcher_foreground"
+                            android:visibility="invisible" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Intro" />
+                            android:text="Intro"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
@@ -66,11 +77,18 @@
                     android:id="@+id/card_lesson"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_margin="12dp"
-                    app:cardCornerRadius="12dp"
+                    android:layout_margin="2dp"
+                    app:cardCornerRadius="5dp"
                     app:cardElevation="6dp"
                     app:layout_columnWeight="1"
                     app:layout_rowWeight="1">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/lesson">
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -82,12 +100,16 @@
                         <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/ic_launcher_foreground" />
+                            android:src="@drawable/ic_launcher_foreground"
+                            android:visibility="invisible" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Lesson" />
+                            android:text="Lesson"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
@@ -95,11 +117,19 @@
                     android:id="@+id/card_tutorial"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_margin="12dp"
-                    app:cardCornerRadius="12dp"
+                    android:layout_margin="2dp"
+                    app:cardCornerRadius="5dp"
                     app:cardElevation="6dp"
                     app:layout_columnWeight="1"
                     app:layout_rowWeight="1">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:alpha="0.85"
+                        android:background="@drawable/tutorial">
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -111,12 +141,16 @@
                         <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/ic_launcher_foreground" />
+                            android:src="@drawable/ic_launcher_foreground"
+                            android:visibility="invisible" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Tutorial" />
+                            android:text="Tutorial"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
@@ -124,11 +158,18 @@
                     android:id="@+id/card_guitarView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_margin="12dp"
-                    app:cardCornerRadius="12dp"
+                    android:layout_margin="2dp"
+                    app:cardCornerRadius="5dp"
                     app:cardElevation="6dp"
                     app:layout_columnWeight="1"
                     app:layout_rowWeight="1">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/guitar">
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -140,12 +181,16 @@
                         <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/ic_launcher_foreground" />
+                            android:src="@drawable/ic_launcher_foreground"
+                            android:visibility="invisible" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Guitar View" />
+                            android:text="Guitar View"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
@@ -153,11 +198,18 @@
                     android:id="@+id/card_chord"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_margin="12dp"
-                    app:cardCornerRadius="12dp"
+                    android:layout_margin="2dp"
+                    app:cardCornerRadius="5dp"
                     app:cardElevation="6dp"
                     app:layout_columnWeight="1"
                     app:layout_rowWeight="1">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/chord">
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -174,7 +226,11 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Chord Training" />
+                            android:background="#000000"
+                            android:text="Chord Training"
+                            android:textColor="#FFFFFF"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 

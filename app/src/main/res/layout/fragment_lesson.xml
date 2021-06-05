@@ -8,12 +8,14 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="#FFFFFF">
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/lessonRecyclerView"
             android:layout_width="match_parent"
             android:layout_height="0dp"
+            android:background="#433F3F"
             app:layout_constraintBottom_toTopOf="@+id/linearLayout"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -31,12 +33,6 @@
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent">
 
-            <Button
-                android:id="@+id/button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Button" />
-
             <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
                 android:id="@+id/youtube_player_view"
                 android:layout_width="match_parent"
@@ -44,8 +40,7 @@
 
                 app:autoPlay="false"
                 app:showFullScreenButton="false"
-                app:showYouTubeButton="false"
-                app:videoId="S0Q4gqBUs7c" />
+                app:showYouTubeButton="false" />
         </LinearLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>

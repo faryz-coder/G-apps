@@ -42,10 +42,35 @@
         <action
             android:id="@+id/action_ListFragment_to_SecondFragment"
             app:destination="@id/SecondFragment" />
+        <action
+            android:id="@+id/action_ListFragment_to_ListSongFragment"
+            app:destination="@id/ListSongFragment" />
+        <action
+            android:id="@+id/action_ListFragment_to_LessonFragment"
+            app:destination="@id/LessonFragment" />
     </fragment>
     <fragment
         android:id="@+id/LessonFragment"
         android:name="com.deventhirran.guitarapps.LessonFragment"
         android:label="fragment_lesson"
-        tools:layout="@layout/fragment_lesson" />
+        tools:layout="@layout/fragment_lesson" >
+        <argument
+            android:name="song"
+            app:argType="string" />
+        <argument
+            android:name="level"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/ListSongFragment"
+        android:name="com.deventhirran.guitarapps.ListSongFragment"
+        android:label="fragment_list_song"
+        tools:layout="@layout/fragment_list_song" >
+        <argument
+            android:name="level"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_ListSongFragment_to_LessonFragment"
+            app:destination="@id/LessonFragment" />
+    </fragment>
 </navigation>

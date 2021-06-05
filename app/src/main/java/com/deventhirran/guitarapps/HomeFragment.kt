@@ -56,7 +56,9 @@ class HomeFragment : Fragment() {
         }
         // TUTORIAL
         view.findViewById<CardView>(R.id.card_tutorial).setOnClickListener {
-            it.findNavController().navigate(R.id.action_HomeFragment_to_LessonFragment)
+//            it.findNavController().navigate(R.id.action_HomeFragment_to_LessonFragment)
+            val bundle = bundleOf("type" to "tutorial")
+            it.findNavController().navigate(R.id.action_HomeFragment_to_ListFragment, bundle)
         }
 
 
