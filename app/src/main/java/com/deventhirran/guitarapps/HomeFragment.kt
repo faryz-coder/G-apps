@@ -41,13 +41,15 @@ class HomeFragment : Fragment() {
         }
         //GUITAR VIEW
         view.findViewById<CardView>(R.id.card_guitarView).setOnClickListener { v ->
-            db.collection("guitar").document("view")
-                .get()
-                .addOnSuccessListener {
-                    val link = it.getField<String>("pdf").toString()
-                    val bundle = bundleOf("link" to link)
-                    v.findNavController().navigate(R.id.action_HomeFragment_to_SecondFragment, bundle)
-                }
+//            db.collection("guitar").document("view")
+//                .get()
+//                .addOnSuccessListener {
+//                    val link = it.getField<String>("pdf").toString()
+//                    val bundle = bundleOf("link" to link)
+//                    v.findNavController().navigate(R.id.action_HomeFragment_to_SecondFragment, bundle)
+//                }
+            val bundle = bundleOf("type" to "guitar")
+            v.findNavController().navigate(R.id.action_HomeFragment_to_ListFragment, bundle)
         }
         // CHORD TRAINING
         view.findViewById<CardView>(R.id.card_chord).setOnClickListener {
